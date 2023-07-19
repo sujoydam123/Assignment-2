@@ -4,13 +4,14 @@
     /* font-family: 'Lato', sans-serif; */
     /* font-family: 'Open Sans', sans-serif; */
     font-family: 'Work Sans', sans-serif;   
+    box-sizing: border-box;
 }
 /* nav section start */
 .nav-container{
-    border: 1px solid green;
+    /* border: 1px solid green; */
     /* min-width: ; */
-    max-width: 1400px;
-    height: 130px;
+    width: 100%px;
+    /* min-height: 130px; */
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
     display: flex;
@@ -53,9 +54,6 @@ span{
     font-weight: 500;
     margin-right: 20px;
 }
-.menu-item-container-1 li a{
-    text-decoration: none;
-}
 .menu-item-container-2{
     display: flex;
     align-items: center;
@@ -73,9 +71,6 @@ span{
     font-weight: 500;
     margin-right: 30px;
 }
-.menu-item-container-2 li a{
-    text-decoration: none;
-}
 .fa-youtube{
     font-size: 30px;
     color: red;
@@ -87,8 +82,8 @@ span{
 /* nav section end */
 /* first section start here */
 .banner-container{
-    border: 1px solid green;
-    max-width: 1400px;
+    /* border: 1px solid green; */
+    width: 100%;
     height: 700px;
     margin: 0px auto;
     display: flex;
@@ -97,7 +92,7 @@ span{
     
 }
 .banner-text{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 50%;
     height: 100%;
     background-image: url("images/Group\ 14.png");
@@ -144,7 +139,7 @@ span{
 }
 
 .banner-img{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     width: 50%;
     height: 100%;
     padding-right: 150px;
@@ -156,8 +151,9 @@ span{
 /* first section end */
 /* third section start here */
 .fnny-video-container{
-    max-width: 1400px;
-    margin: 0px auto;
+    width: 100%;
+    margin: 100px auto;
+    
 }
 .fnny-video-header{
     color: #0B0223;
@@ -177,7 +173,7 @@ span{
     display: flex;
     width: 80%;
     justify-content: center;
-    margin: 0px auto;
+    margin: 50px auto;
 }
 .fnny-video-imag-container div{
     margin-right: 10px;
@@ -187,3 +183,199 @@ span{
 
 }
 /* third section end here */
+/* firth section start here */
+.play-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    height: 600px;
+    margin: 50px auto;
+}
+.play-section-content{
+    padding: 0px 185px;
+    width: 50%;
+}
+.play-section-content-title{
+    text-align: right;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 35px;
+    margin: 0px auto;
+}
+.play-section-content-pera{
+    color: #534C64;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    /* width: 300px; */
+}
+.play-section-img{
+    position: relative;
+    width: 600px;
+    height: 600px;
+    position: relative;
+}
+.play-section-img-1{
+    width: 400px;
+    height: 400px;
+}
+.play-section-img-2{
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    border: 5spx solid #FFF;
+    position: absolute;
+    bottom: 150px;
+    right: 500px;
+}
+/* forth section end here */
+/* fifth section start here */
+.game-section{
+    width: 100%;
+    height: 430px;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+
+
+}
+.game-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    width: 90%;
+    flex-wrap: wrap;
+    gap: 0px;
+}
+.game-logo{
+    width: 60px;
+    height: 60px;
+}
+.game-name{
+    color: #0B0223;
+    font-size: 15px;
+    font-weight: 200;
+}
+.game-decoration{
+    width: 220px;
+    height: 80px;
+    background-color: gray;
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 5px;
+    align-items: center;
+    margin-right: 10px;
+    border-radius: 30px;
+}
+
+/* fifth section end here */
+/* foooter section start here */
+.footer-container{
+    width: 100%;
+    height: 600px;
+    background: #0B0223;
+}
+.primary{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding: 80px 0px;
+}
+.footer-container p{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+    color: white;
+}
+.footer-menu{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+.footer-menu div{
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    color:white;
+    margin: 60px 0px;
+}
+.footer-logo div{
+    color: white;
+    width: 80px;
+    /* height: 130px; */
+    font-weight: 900;
+    font-size: 45px;
+}
+.footer-setting div{
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+.footer-setting{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.footer-contant{
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 50px;
+}
+
+/* responsive section */
+@media screen and (max-width:576px){
+    .nav-container{
+        flex-direction: column;
+    }
+    .menu-item-container{
+        flex-direction: column;
+    }
+    .menu-item-container-1{
+        flex-direction: column;
+        padding-bottom: 15px;
+    }
+    .menu-item-container-1 li{
+        padding: 10px;
+        
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+    }
+    .banner-img{
+        padding-left: 5px;
+        width: auto;
+    }
+    .fnny-video-container{
+        flex-direction: column;
+    }
+    .fnny-video-imag-container{
+        flex-direction: column;
+    }
+    .play-section{
+        flex-direction: column;
+    }
+    .play-section-content{
+        width: 90%;
+        padding: 20px 10px;
+        text-align: center;
+    }
+    .play-section-img{
+        width: 560px;
+        width: 500px;
+    }
+    .game-container{
+        flex-direction: column;
+    }
+}
