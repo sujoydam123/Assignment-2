@@ -73,6 +73,9 @@ span{
     font-weight: 500;
     margin-right: 30px;
 }
+.menu-item-container-2 > a{
+
+}
 .fa-youtube{
     font-size: 30px;
     color: red;
@@ -240,7 +243,7 @@ span{
     width: 100%;
     height: 430px;
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
-    /* padding: 30px; */
+    padding-top: 70px;
     display: flex;
     justify-content: center;
 
@@ -450,12 +453,46 @@ span{
         width: 500px;
     }
     .game-container{
-        gap: 10px;
-        display: none;
+        display: grid;
+        /* justify-content: space-evenly; */
+        grid-template-columns: repeat(3,1fr);
+        padding: 10px 10px;
+        width: 90%;
+        margin: 0px auto;
+        flex-wrap: wrap;
+        gap: 0px;
+        padding: 2pxpx;
     }
+    .game-logo{
+        width: 20px;
+        height: 20px;
+    }
+    .game-name{
+        color: #0B0223;
+        font-size: 10px;
+        font-weight: 200;
+    }
+    .game-decoration{
+        width: 100px;
+        height: 50px;
+        background-color: rgb(219, 206, 208);
+        display: flex;
+        /* justify-content: space-between; */
+        gap: 5px;
+        align-items: center;
+        margin-right: 5px;
+        border-radius: 30px;
+        transition: 0.5s;
+    }
+    .game-decoration:hover{
+        background-color: wheat;
+        border: 1px solid rgb(202, 73, 94);
+    
+    }
+    
     /* foooter section start here */
 .footer-container{
-    display: none;
+    display:;
     width: 100%;
     height: 600px;
     background: #0B0223;
